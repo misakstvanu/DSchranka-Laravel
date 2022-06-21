@@ -1,0 +1,33 @@
+{
+    "name": "misakstvanu/dschranka-laravel",
+    "description": "Laravel package for DSchranka Partner API",
+    "type": "library",
+    "license": "GPL-3.0-only",
+    "version": "1.0.0",
+    "autoload": {
+        "psr-4": {
+            "Misakstvanu\\DschrankaLaravel\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Michal Štván",
+            "email": "michal@dschranka.cz"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": "^8.0",
+        "guzzlehttp/guzzle": "^7.4.3",
+        "laravel/framework": "^8.0|^9.0",
+        "misakstvanu/dschranka-api": "^1.0"
+    },
+
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Misakstvanu\\DschrankaLaravel\\DschrankaServiceProvider"
+            ]
+        }
+    }
+}
